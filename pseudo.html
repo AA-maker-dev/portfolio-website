@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elements and Pseudo-Classes Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        .link-container {
+            display: block;
+            width: 200px;
+            line-height: 1.5;
+        }
+
+        a {
+            font-size: 18px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            display: inline-block;
+            width: 150px;
+            text-align: center;
+            position: relative;
+        }
+
+        a:link {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:visited {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: yellow;
+            font-size: 150%;
+            background-color: black;
+            font-family: monospace;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        a:active {
+            color: white;
+            background-color: #333;
+            border: 2px solid #000;
+        }
+
+        a::before {
+            content: "★ ";
+            color: gold;
+            font-size: 14px;
+        }
+
+        a::after {
+            content: " ✔";
+            color: green;
+            font-size: 14px;
+        }
+
+        .link-container::first-line {
+            font-weight: bold;
+            color: #444;
+        }
+
+        a::first-letter {
+            font-size: 22px;
+            color: #e91e63;
+            font-weight: bold;
+        }
+
+        a::selection {
+            background-color: #ffeb3b;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="link-container">
+        <a href="#link1">I live in Nepal</a>
+    </div>
+    <div class="link-container">
+        <a href="#link2">I live in Nepal</a>
+    </div>
+    <div class="link-container">
+        <a href="#link3">I live in Nepal</a>
+    </div>
+    <div class="link-container">
+        <a href="#link4">I live in Nepal</a>
+    </div>
+    <div class="link-container">
+        <a href="#link5">I live in Nepal</a>
+    </div>
+    <div class="link-container">
+        <a href="#link6">I live in Nepal</a>
+    </div>
+</body>
+</html>

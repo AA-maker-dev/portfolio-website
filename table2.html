@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Category Table</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    td, th {
+      border: 1px solid black;
+      padding: 10px;
+      vertical-align: top;
+      text-align: center;
+    }
+    .header {
+      background-color: red;
+      color: white;
+    }
+    .players {
+      background-color: pink;
+    }
+    .food {
+      background-color: cyan;
+    }
+    .places {
+      background-color: orange;
+    }
+    .cars {
+      background-color: #ffe699;
+    }
+    img {
+      width: 100px;
+      height: 100px;
+    }
+    a {
+      text-decoration: none;
+      color: blue;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <center>
+    <table>
+      <tr class="header">
+        <th>Category</th>
+        <th>Image</th>
+        <th>List</th>
+        <th>Table</th>
+        <th>Link</th>
+      </tr>
+
+      <!-- Players Row -->
+      <tr class="players">
+        <td rowspan="2">Players</td>
+        <td><img src="https://cdn.britannica.com/25/222725-050-170F622A/Indian-cricketer-Mahendra-Singh-Dhoni-2011.jpg" alt="Dhoni"></td>
+        <td rowspan="2">
+          <ol>
+            <li>Dhoni</li>
+            <li>Ronaldo</li>
+          </ol>
+        </td>
+        <td rowspan="2">
+          <table border="1" align="center">
+            <tr>
+              <th>Name</th>
+              <th>DOB</th>
+              <th>Famous For</th>
+            </tr>
+            <tr>
+              <td>Mahendra Singh Dhoni</td>
+              <td>1981</td>
+              <td>Cricket</td>
+            </tr>
+            <tr>
+              <td>Cristiano Ronaldo</td>
+              <td>1985</td>
+              <td>Football</td>
+            </tr>
+          </table>
+        </td>
+        <td rowspan="2">
+          <a href="https://en.wikipedia.org/wiki/MS_Dhoni">Dhoni</a><br>
+          <a href="https://en.wikipedia.org/wiki/Cristiano_Ronaldo">Ronaldo</a>
+        </td>
+      </tr>
+      <tr class="players">
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQb-NGEQDekk2BwsllLjk4tcIM_BPIzXECdsg&s" alt="Ronaldo"></td>
+      </tr>
+
+      <!-- Food Row -->
+      <tr class="food">
+        <td rowspan="2">Food</td>
+        <td><img src="https://assets.epicurious.com/photos/5c745a108918ee7ab68daf79/1:1/w_2503,h_2503,c_limit/Smashburger-recipe-120219.jpg" alt="Burger"></td>
+        <td rowspan="2">
+          <ul>
+            <li>Burger</li>
+            <li>Pizza</li>
+          </ul>
+        </td>
+        <td rowspan="2">
+          <table border="1" align="center">
+            <tr>
+              <th>Name</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>Burger</td>
+              <td>250</td>
+            </tr>
+            <tr>
+              <td>Pizza</td>
+              <td>340</td>
+            </tr>
+          </table>
+        </td>
+        <td rowspan="2">
+          <a href="https://en.wikipedia.org/wiki/Hamburger">Burger</a><br>
+          <a href="https://en.wikipedia.org/wiki/Pizza">Pizza</a>
+        </td>
+      </tr>
+      <tr class="food">
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Supreme_pizza.jpg" alt="Pizza"></td>
+      </tr>
+
+      <!-- Places Row -->
+      <tr class="places">
+        <td rowspan="2">Places</td>
+        <td><img src="https://media.istockphoto.com/id/461235259/photo/stupa-in-swayambhunath-monkey-temple-kathmandu-nepal.jpg?s=612x612&w=0&k=20&c=12X7zilZ0k9EGWF5szldIWsnBCO7arJ-MkIlWOap-l4=" alt="Swayambhunath"></td>
+        <td rowspan="2">
+          <ul>
+            <li>Swayambhunath</li>
+            <li>Phewa Lake</li>
+          </ul>
+        </td>
+        <td rowspan="2">
+          <table border="1" align="center">
+            <tr>
+              <th>Name</th>
+              <th>Location</th>
+            </tr>
+            <tr>
+              <td>Swayambhunath</td>
+              <td>Kathmandu</td>
+            </tr>
+            <tr>
+              <td>Phewa Lake</td>
+              <td>Pokhara</td>
+            </tr>
+          </table>
+        </td>
+        <td rowspan="2">
+          <a href="https://en.wikipedia.org/wiki/Swayambhunath">Swayambhunath</a><br>
+          <a href="https://en.wikipedia.org/wiki/Phewa_Lake">Phewa Lake</a>
+        </td>
+      </tr>
+      <tr class="places">
+        <td><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6qfACJRhhlTtYcrg8y1pVd-2nHY0tGWvd6w&s" alt="Phewa Lake"></td>
+      </tr>
+
+      <!-- Cars Row -->
+      <tr class="cars">
+        <td rowspan="2">Cars</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/59/Suzuki_Baleno_front_20071004.jpg/250px-Suzuki_Baleno_front_20071004.jpg" alt="Baleno"></td>
+        <td rowspan="2">
+          <ul>
+            <li>Suzuki Baleno</li>
+            <li>Hyundai i10</li>
+          </ul>
+        </td>
+        <td rowspan="2">
+          <table border="1" align="center">
+            <tr>
+              <th>Name</th>
+              <th>Type</th>
+            </tr>
+            <tr>
+              <td>Suzuki Baleno</td>
+              <td>Hatchback</td>
+            </tr>
+            <tr>
+              <td>Hyundai i10</td>
+              <td>Hatchback</td>
+            </tr>
+          </table>
+        </td>
+        <td rowspan="2">
+          <a href="https://en.wikipedia.org/wiki/Suzuki_Baleno">Baleno</a><br>
+          <a href="https://en.wikipedia.org/wiki/Hyundai_i10">Hyundai i10</a>
+        </td>
+      </tr>
+      <tr class="cars">
+        <td><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/2023_Hyundai_i10_%28AC3%29_Autofr%C3%BChling_Ulm_IMG_9349.jpg/330px-2023_Hyundai_i10_%28AC3%29_Autofr%C3%BChling_Ulm_IMG_9349.jpg" alt="Hyundai i10"></td>
+      </tr>
+    </table>
+  </center>
+</body>
+</html>

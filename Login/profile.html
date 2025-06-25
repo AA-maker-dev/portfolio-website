@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/11b443e7bd.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            display: flex;
+            max-width: 800px;
+            margin: auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            flex-wrap: wrap;
+            gap: 20px;
+            background-image: linear-gradient(to bottom right, #480cd3, #feb47b);
+        }
+        .profile-left {
+            flex: 1;
+            padding: 20px;
+            text-align: center;
+        }
+        .profile-right {
+            flex: 2;
+            padding: 20px;
+            gap: 10px;
+            border-left: #f4f4f4 2px solid;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .profile-name {
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        .profile-bio {
+            color: #c9c7c7;
+        }
+        h3 {
+            margin-top: 0;
+        }
+        a{ 
+            color: #480cd3;
+            text-decoration: none;
+        }
+       i{ 
+            font-size: 1.5rem;
+            margin-right: 10px;
+            transition: transform 0.3s ease-in-out;
+            word-spacing: 10%;
+        }
+        i:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile-left">
+            <img src="https://itchronicles.com/wp-content/uploads/2020/11/where-is-ai-used.jpg" alt="Profile Picture" class="profile-picture">
+            <h2 class="profile-name">Abhi Khatiwada</h2>
+            <p class="profile-bio">Web Developer | Tech Enthusiast | Lifelong Learner</p>
+        </div>
+        <div class="profile-right">
+            <h3>Contact Information</h3>
+            <p><strong>Phone:</strong>
+            +977-9841234567</p>
+            <p><strong>Address:</strong>
+            Kathmandu, Nepal</p>
+            <p><strong>LinkedIn:</strong>   
+            <a href="https://www.linkedin.com/in/abhi-khatiwada-123456789/" target="_blank">linkedin.com/in/abhi-khatiwada-123456789</a></p>
+            <p><strong>Email:</strong> 
+            khatiwadaabhi123@gmail.com</p>
+            Contact me for collaboration or inquiries.
+            <br>
+            <a href="http://www.facebook.com">
+                <i class="fa-brands fa-facebook fa-bounce" style="color: #ff2600;"></i>
+            </a>
+
+            <a href="http://www.instagram.com">
+                 <i class="fa-brands fa-instagram fa-bounce" style="color: #ff2600;"></i>
+            </a>
+
+            <a href="http://www.youtube.com">
+                <i class="fa-brands fa-youtube fa-bounce" style="color: #ff2600;"></i>
+            </a>
+    </div>
+</body>
+</html>

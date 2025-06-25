@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Universal Selector */
+        *{
+            margin: 0;
+            background-color: aqua;
+        }
+        /* Type or Element Selector */
+        p {
+            color: green;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            border: 2px solid black;
+            padding: 10px;
+        }
+        /* Class Selector */
+        .c {
+            color: purple;
+            font-family: 'Georgia', serif;
+            text-align: center;
+            border: 2px dashed orange;
+            padding: 15px;
+        }
+        #ID {
+            color: blue;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            border: 2px solid red;
+            padding: 20px;
+        }
+        /* Pseudo-Class Selector */
+        a:hover {
+            color: yellow;
+            text-decoration:none;
+        }
+        /* Pseudo-Element Selector */
+        a::before {
+            content: "Link: ";
+            color: black;
+            font-weight: bold;
+        }
+        /* Descendant Selector */
+        div p {
+            color: darkblue;
+            font-style: italic;
+        }
+        /* Child Selector */
+        div > h2 {
+            color: darkgreen;
+            font-weight: bold;
+        }
+        /* Adjacent Sibling  Selector */
+        h2 + p {
+            color: darkred;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center; color: red;"><b>Selectors</b></h1>
+    <div class="a">
+        <h2>1. Universal Selector</h2>
+        <p>This selector applies styles to all elements.</p>
+        <br>
+    </div>
+    <div class="b">
+        <h2>2. Type Selector</h2>
+        <p>This selector applies styles to all <code>p</code> elements.</p>
+        <br>
+    </div>
+    <div class="c">
+        <h2>3. Class Selector</h2>
+        <p>This selector applies styles to certain tags with class</p>
+        <br>
+    </div>
+    <div id="ID">
+        <h2>4. ID Selector</h2>
+        <p>This selector applies styles to a specific element with an ID.</p>
+        <br>
+    </div>
+    <div>
+        <h2>5. Pseudo-Class Selectors</h2>
+        <p>This selector applies styles on the basis of user's interaction.</p>
+        <a href="#">Hover over this link</a>
+        <br>
+    </div>
+    <div>
+        <h2>6. Pseudo-Element Selectors</h2>
+        <p>This selector applies styles to a specific part of an element.</p>
+    </div>
+    <div>
+        <h2>7. Descendant Selector </h2>
+        <p>Styles elements nested within a specified ancestor.</p>
+    </div>
+    <div>
+        <h2>8. Child Selector</h2>
+        <p>Styles elements that are direct children of a specified parent.</p>
+    </div>
+    <div>
+        <h2>9. Adjacent Sibling Selectors</h2>
+        <p>Styles elements that are immediately preceded by a specified sibling.</p>
+    </div>
+    <div>
+        <h2>10. Group Selectors</h2>
+        <p>Styles multiple elements with a single rule.</p>
+        <p class="c">This is an example of a class selector.</p>
+    </div>
+</body>
+</html>

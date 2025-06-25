@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body { 
+    background: #f9f9f9;
+    min-height: 100vh;
+    overflow: hidden;
+    overflow-y: auto;
+}
+
+header { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100; 
+}
+
+/* Place the logo image in the very top left corner, outside the nav bar */
+.logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px 0 0 20px; /* Optional: add some spacing from edges */
+    z-index: 200; /* Above header */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    top: 5px; 
+    height: 100px; /* Increased size */
+    width: auto;
+    position: absolute;
+    /* Enhance contrast for visibility */
+    filter: brightness(-10) contrast(-10) drop-shadow(0 2px 8px rgba(0,0,0,0.3));
+}
+
+/* Keep the header content (e.g., nav) on the right side as before */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-end; /* Align content to the right */
+    align-items: center;
+    z-index: 100;
+}
+
+.navigation a { 
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px; 
+    font-weight: 600;
+}
+
+.navigation a:hover, 
+.navigation a.active { 
+    background: #359381;
+    color: #fff;
+}
+
+.parallax { 
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#text { 
+    position: absolute;
+    font-size: 6em;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    top: 280px;
+
+}
+
+
+.parallax img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.sec { 
+    position: relative;
+    background: #003329;
+    padding: 100px;
+}
+
+.sec h2 { 
+    font-size: 3em;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sec p { 
+    font-size: 1em;
+    color: #fff;
+    font-weight: 300;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{ 
+            background-color: pink;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <h1 style="text-align: center;">Student's Registration Form</h1>
+        Roll No: <input type="text" name="rollno" placeholder="Enter your roll number"><br><br>
+        Student Name: <input type="text" name="name" placeholder="First Name"> &nbsp;- &nbsp; <input type="text" name="name" placeholder="Last Name"><br><br>
+        Father's Name: <input type="text" name="fathername" placeholder="Enter your father's name"><br><br>
+        Date of Birth: <input type="text" name="dob" placeholder="Day">&nbsp; - &nbsp;
+        <input type="text" name="dob" placeholder="Month">&nbsp; - &nbsp;
+        <input type="text" name="dob" placeholder="Year"> <i style="font-size: large;">(DD-MM-YYYY)</i><br><br>
+        Mobile Number: <select name="phone" id="">
+            <option value="1">+977</option>
+            <option value="1">+988</option>
+            <option value="1">+999</option>
+        </select>
+        <input type="text" name="phone" placeholder="Enter your phone number"><br><br>
+        Email Id: <input type="email" name="email" placeholder="Enter your email"><br><br>
+        Password: <input type="password" name="password" placeholder="Enter your password"><br><br>
+        Gender: 
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="male">Female
+        <br><br>
+        Department:
+       <input type="checkbox" name="department" value="computer">Computer
+        <input type="checkbox" name="department" value="electronics">Electronics
+        <input type="checkbox" name="department" value="mechanical">Mechanical
+        <input type="checkbox" name="department" value="mechanical">IT
+        <input type="checkbox" name="department" value="mechanical">Civil
+        <br><br>
+        Course: 
+        <select name="course" id="" style="width: 500px; height: 30px; text-align: center;">
+            <option value="">-------------Select Current Course---------------</option>
+        </select>
+        <br><br>
+        Student's Photo: <input type="file" name="photo" id=""><br><br>
+        Sttudent's City: <input type="text" name="city" placeholder="Enter your city"><br><br>
+        Address: <textarea name="address" id="" cols="30" rows="10" placeholder="Enter your address"></textarea><br><br>
+        <input id="a" type="submit" value="Register" style=" width: 100px; height: 30px; background-color: green; color: white; font-weight: bold; text-align: center; border-radius: 5px;">
+    
+    </form>
+</body>
+</html>

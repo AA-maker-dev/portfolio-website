@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">🌙</button>
+    <header>
+        <h1>Abhi Khatiwada</h1>
+        <p>Web Developer & Designer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <div class="container">
+        <section id="about" class="about">
+            <img src="WhatsApp Image 2025-06-24 at 20.17.53_964e233c.jpg" alt="Profile Photo">
+            <div class="about-text">
+                <h2 class="section-title">About Me</h2>
+                <p>
+                    Hi! I'm <b>Abhi Khatiwada</b>, a passionate web developer with a love for creating beautiful and functional websites. I specialize in front-end development and enjoy bringing ideas to life in the browser. Let's build something amazing together!
+                </p>
+            </div>
+        </section>
+        <section id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Portfolio Website</div>
+                        <div class="project-desc">A personal portfolio website to showcase my skills, projects, and contact information. Built with HTML, CSS, and JavaScript.</div>
+                    </div>
+                    <div class="project-links">
+                        <a href="portfolio.html">Live Demo</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">E-commerce Store</div>
+                        <div class="project-desc">A modern e-commerce platform with product listings, cart, and checkout functionality. Responsive and user-friendly design.</div>
+                    </div>
+                    <div class="project-links">
+                        <a href="home.html">Live Demo</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div>
+                        <div class="project-title">Blog Platform</div>
+                        <div class="project-desc">A full-featured blog platform with user authentication, post creation, and comments. Built using the latest web technologies.</div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#">Live Demo</a>
+                        <a href="#">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="map" class="map">
+            <h2 class="section-title">My Location</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d35706.11970202678!2d85.31195850072358!3d27.671879711114432!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19e8af4a5fe3%3A0x963d00cdf478c6b6!2sNepal%20College%20of%20Information%20Technology!5e0!3m2!1sen!2snp!4v1719372127955!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+        <section id="contact" class="contact">
+            <h2 class="section-title">Contact Me</h2>
+            <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you for reaching out!'); this.reset();">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        &copy; 2025 Abhi Khatiwada. All rights reserved.
+    </footer>
+    <script>
+        const toggleBtn = document.getElementById('themeToggle');
+        const body = document.body;
+        toggleBtn.addEventListener('click', () => {
+            body.classList.toggle('dark-theme');
+            toggleBtn.classList.toggle('dark');
+            toggleBtn.textContent = body.classList.contains('dark-theme') ? '☀️' : '🌙';
+        });
+    </script>
+</body>
+</html>

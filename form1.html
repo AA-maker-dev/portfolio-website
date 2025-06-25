@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{ 
+            background-color: #00ddff;
+            font-family: Arial, sans-serif;
+        }
+        .div {
+            width: 50%;
+            margin: auto;
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+    <h1>Registration Form</h1>
+    <form action="">
+        <fieldset>
+            <legend>Registration Form</legend>
+            <div class="Left">
+                <label for="First-name">First Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br><br>
+                <label for="Last-name">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+                <br><br>
+                <label for="Age">Age:</label>
+                <input type="number" id="age" name="age" required>
+                <br><br>
+            </div>
+            <div class="right">
+                <label for="Email-id">Email ID:</label>
+                <input type="email" id="email" name="email" required>
+                <br><br>
+                Description:
+                <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+                <br><br>
+                <label for="phone">Phone: </label>
+                <input type="text" id="phone" name="phone" required>
+                <br><br>
+                Occupation:
+                <input type="radio" name="occupation" value="agree">I agree to the terms and conditions
+                <input type="radio" name="occupation" value="disagree">I do not agree to the terms and conditions
+            </div>
+        </fieldset>
+        <br><br>
+    </form>
+    </div>
+</body>
+</html>

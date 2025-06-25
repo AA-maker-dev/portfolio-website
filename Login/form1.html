@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(135deg, #00ddff 0%, #0099cc 100%);
+            font-family: 'Roboto', Arial, sans-serif;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            width: 100%;
+            max-width: 420px;
+            margin: 40px auto;
+            padding: 32px 28px 24px 28px;
+            border-radius: 18px;
+            background: #fff;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+        }
+        h1 {
+            text-align: center;
+            color: #0099cc;
+            margin-bottom: 18px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        fieldset {
+            border-radius: 12px;
+            border: 1.5px solid #00bbdd;
+            padding: 22px 18px 16px 18px;
+            background: #f8fcff;
+        }
+        legend {
+            color: #0099cc;
+            font-weight: 700;
+            padding: 0 10px;
+            font-size: 1.1em;
+        }
+        .form-group {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 18px;
+        }
+        label {
+            margin-bottom: 7px;
+            color: #333;
+            font-weight: 500;
+        }
+        input[type="text"],
+        input[type="number"],
+        input[type="email"],
+        textarea {
+            padding: 10px 12px;
+            border-radius: 6px;
+            border: 1.5px solid #b2eaff;
+            font-size: 1em;
+            background: #f4fafd;
+            transition: border 0.2s;
+        }
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="email"]:focus,
+        textarea:focus {
+            border: 1.5px solid #0099cc;
+            outline: none;
+            background: #e6f7ff;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            margin-top: 8px;
+            color: #333;
+        }
+        .radio-group label {
+            font-weight: 400;
+            margin-bottom: 4px;
+            margin-left: 18px;
+        }
+        .radio-group input[type="radio"] {
+            accent-color: #00bbdd;
+            margin-right: 8px;
+        }
+        .submit-btn {
+            margin-top: 18px;
+            padding: 12px 0;
+            border: none;
+            border-radius: 6px;
+            background: linear-gradient(90deg, #00bbdd 60%, #0099cc 100%);
+            color: #fff;
+            font-size: 1.1em;
+            font-weight: 700;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,187,221,0.08);
+            transition: background 0.2s, transform 0.1s;
+        }
+        .submit-btn:hover {
+            background: linear-gradient(90deg, #0099cc 60%, #00bbdd 100%);
+            transform: translateY(-2px) scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Registration Form</h1>
+        <form action="">
+            <fieldset>
+                <legend>Registration Form</legend>
+                <div class="form-group">
+                    <label for="name">First Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="lname">Last Name:</label>
+                    <input type="text" id="lname" name="lname" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Age:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4" cols="50" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone: </label>
+                    <input type="text" id="phone" name="phone" required>
+                </div>
+                <div class="form-group radio-group">
+                    Occupation:
+                    <label><input type="radio" name="occupation" value="agree"> I agree to the terms and conditions</label>
+                    <label><input type="radio" name="occupation" value="disagree"> I do not agree to the terms and conditions</label>
+                </div>
+                <button type="submit" class="submit-btn">Register</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
